@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Music Player</title>
+</head>
+<body>
+    <div id="player-container">
+        <!-- Song -->
+        <div id="img-container">
+            <img src="IMG/img-4.jpg" alt="Album Art">
+        </div>
+        <h2 id="title">Cradles</h2>
+        <h3 id="artist">Sub Urban</h3>
+        <audio src="songs/sound-2.mp3"></audio>
+        <!-- Progress Bar -->
+        <div id="progress-container">
+            <div id="progress-bar"></div>
+            <div id="duration-container">
+                <span id="curr-time">00:00</span>
+                <span id="duration">3:29</span>
+            </div>
+        </div>
+        <!-- Ctrls -->
+        <div id="player-ctrl">
+            <i class="fas fa-backward" id="prev" title="Previous"></i>
+            <i class="fas fa-play main-button" id="play" title="Play"></i>
+            <i class="fas fa-forward" id="next" title="Next"></i>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
